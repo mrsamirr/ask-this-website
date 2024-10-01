@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3125",
-    "build": "next build",
+    "build": "next build && cp node_modules/tiktoken/tiktoken_bg.wasm .next/server/",
     "start": "next start",
     "lint": "next lint"
   },
@@ -20,7 +20,9 @@
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tiktoken": "^1.0.16",
+    "tiktoken-node": "^0.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",

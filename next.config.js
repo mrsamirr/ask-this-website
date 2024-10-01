@@ -1,10 +1,11 @@
-module.exports = {
-    webpack: (config) => {
-      config.module.rules.push({
-        test: /\.wasm$/,
-        type: 'asset/resource',
-      });
-      return config;
+const nextConfig = {
+    webpack: (config, { isServer }) => {
+      config.experiments = {
+        ...config.experiments,
+        asyncWebAssembly: true,
+      }
+      return config
     },
-  };
+  }
   
+  module.exports = nextConfig
