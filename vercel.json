@@ -1,8 +1,15 @@
 {
+    "version": 2,
+    "builds": [
+        {
+            "src": "next.config.js",
+            "use": "@vercel/next"
+        }
+    ],
     "functions": {
-      "source": "/api/*",
-      "memory": 1024,
-      "maxDuration": 10
+        "api/*": {
+            "memory": 1024,
+            "maxDuration": 10
+        }
     }
-  }
-  
+}
