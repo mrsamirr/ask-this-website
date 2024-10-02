@@ -33,9 +33,6 @@ export default function Home() {
         )}
       />
     </div>
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-none bg-background md:shadow-xl">
-      <Bento />
-    </div>
     <Footer />
   </main>
 }
