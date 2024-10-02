@@ -9,9 +9,9 @@ module.exports = {
   },
   experimental: {
     outputFileTracingIncludes: {
-      "/api/**/*": ["./node_modules/**/*.wasm"],
+      "/api/**/*": ["./node_modules/**/*.wasm", "./node_modules/tiktoken/**/*.wasm"],
       "/*": ["./cache/**/*"],
     },
-    serverComponentsExternalPackages: ["sharp", "onnxruntime-node"],
+    serverComponentsExternalPackages: ["sharp", "onnxruntime-node", "tiktoken"],
   },
 };
