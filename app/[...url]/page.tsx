@@ -1,4 +1,4 @@
-import { ChatWrapper } from "@/components/ChatWrapper";
+import { ChatWrapper } from "@/components/ChatParams/ChatWrapper";
 import { ragChat } from "@/lib/rag-chat";
 import { redis } from "@/lib/redis";
 import { cookies } from "next/headers";

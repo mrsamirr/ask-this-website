@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Bot, User } from "lucide-react";
+import Image from "next/image";
 
 interface MessageProps {
     content: string
@@ -8,10 +9,10 @@ interface MessageProps {
 
 
 export const Message = ({ content, isUserMessage }: MessageProps) => {
-    return <div
+    return <div 
         className={cn({
-            "bg-zinc-800": isUserMessage,
-            "bg-zinc-900/25": !isUserMessage
+            "bg-zinc-800/15": isUserMessage,
+            "bg-black": !isUserMessage
         })}
     >
         <div className="p-6">
@@ -23,12 +24,12 @@ export const Message = ({ content, isUserMessage }: MessageProps) => {
                     }
                     )}
                 >
-                    {isUserMessage ? <User className="size-5" /> : <Bot className="size-5 text-white" />}
+                    {isUserMessage ? <User className="size-5" /> : <Image src="/favicon.ico" width={22} height={22} alt={"aurora-ai"} />}
                 </div>
 
                 <div className="flex flex-col ml-6 w-full">
                     <div className="flex items-center space-x-2">
-                        <span className="text-sm font-semibold text-gray-900 dark:text-white"> {isUserMessage ? "You" : "Website"}</span>
+                        <span className="text-sm font-semibold text-gray-900 dark:text-white"> {isUserMessage ? "You" : "Aurora ai"}</span>
                     </div>
 
                     <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white ">{content}</p>

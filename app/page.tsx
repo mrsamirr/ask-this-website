@@ -1,7 +1,6 @@
 
-import Bento from "@/components/ui/bento";
 import Footer from "@/components/ui/Footer";
-import GridPattern from "@/components/ui/grid-pattern";
+import GridPattern from "@/components/ui/GridBackground/grid-pattern";
 import HeroSection from "@/components/ui/Hero/HeroSection";
 import Navbar from "@/components/ui/Navbar";
 import { cn } from "@/lib/utils";
