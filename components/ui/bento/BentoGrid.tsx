@@ -22,7 +22,7 @@ export default function Component() {
                     <div className="bg-zinc-900 p-14 h-80 rounded-xl">
                         <div className="grid grid-cols-4 gap-5 mb-8">
                             {[...Array(16)].map((_, i) => (
-                                <Star className="w-6 h-6 text-green-500" />
+                                <Star  key={i} className="w-6 h-6 text-green-500" />
                                 //   <Star key={i} className={`w-4 h-4 ${i % 3 === 0 ? 'text-green-500' : 'text-gray-700'}`} />
                             ))}
                         </div>

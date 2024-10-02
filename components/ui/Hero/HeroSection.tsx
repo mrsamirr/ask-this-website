@@ -13,7 +13,7 @@ export default function HeroSection() {
             </p>
             <div className="mt-12"></div>
             <p className="max-w-2xl mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl text-nowrap items-center justify-center flex">
-            "Built a smart chatbot application using Retrieval-Augmented Generation (RAG)            </p>
+            &apos;Built a smart chatbot application using Retrieval-Augmented Generation (RAG)            </p>
             <p className="max-w-2xl mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl text-nowrap items-center justify-center flex"> 
             that dynamically processes any provided URL as input, leveraging advanced natural language 
             </p>
@@ -21,7 +21,7 @@ export default function HeroSection() {
             understanding to extract relevant information and deliver accurate, context-aware responses 
             </p>
             <p className="max-w-2xl mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl text-nowrap">
-            through an intuitive conversational interface."   
+            through an intuitive conversational interface.&apos;   
               </p>
           </div>
         </div>
