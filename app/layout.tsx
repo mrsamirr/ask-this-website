@@ -1,19 +1,10 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Providers } from "@/components/Providers";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ask This Website",
@@ -27,9 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(`${geistSans.variable} ${geistMono.variable} min-h-screen antialiased`)}
-      >
+       <body className={cn(inter.className, "min-h-screen antialiased")}>
         <Providers>
           <main className="h-screen dark text-foreground bg-background">
             {children}
