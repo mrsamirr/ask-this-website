@@ -1,4 +1,5 @@
 
+import { TheDemo } from "@/components/DemoLive/Demolive";
 import { Reviews } from "@/components/Reviews/Review";
 import Footer from "@/components/ui/Footer";
 import GridPattern from "@/components/ui/GridBackground/grid-pattern";
@@ -7,7 +8,7 @@ import Navbar from "@/components/ui/Navbar";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
-  return <main >
+  return <main className="bg-background">
     <Navbar />
     <div
       className="relative flex h-svh w-full flex-col items-center justify-center overflow-hidden rounded-none  bg-background md:shadow-xl">
@@ -33,6 +34,7 @@ export default function Home() {
         )}
       />
     </div>
+    <TheDemo />
     <Reviews />
     <Footer />
   </main>
