@@ -1,4 +1,5 @@
 
+import { Reviews } from "@/components/Reviews/Review";
 import Footer from "@/components/ui/Footer";
 import GridPattern from "@/components/ui/GridBackground/grid-pattern";
 import HeroSection from "@/components/ui/Hero/HeroSection";
@@ -32,6 +33,7 @@ export default function Home() {
         )}
       />
     </div>
+    <Reviews />
     <Footer />
   </main>
 }
