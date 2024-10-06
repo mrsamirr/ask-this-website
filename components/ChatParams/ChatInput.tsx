@@ -35,7 +35,7 @@ export const ChatInput = ({ handleInputChange, handleSubmit, input, setInput }: 
                                 setInput("")
                             }
                         }}
-                        placeholder="Enter your question..." className="resize-none bg-zinc-800 hover:bg-zinc-900 rounded-xl text-base"
+                        placeholder="Ask Me Anything..." className="resize-none bg-zinc-800 hover:bg-zinc-900 rounded-xl text-base"
                     />
 
                     <Button

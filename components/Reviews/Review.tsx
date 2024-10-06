@@ -1,3 +1,4 @@
+"use client"
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/Reviews/review";
 import { reviews } from "@/data/review";
@@ -11,11 +12,13 @@ const ReviewCard = ({
     name,
     username,
     body,
+    live
 }: {
     img: string;
     name: string;
     username: string;
     body: string;
+    live: string;
 }) => {
     return (
         <figure
@@ -31,9 +34,11 @@ const ReviewCard = ({
                 <img className="rounded-full" width="32" height="32" alt="" src={img} />
                 <div className="flex flex-col">
                     <figcaption className="text-sm font-medium dark:text-white">
-                        {name}
+                        <a href={live} target="_blank" rel="noopener noreferrer">
+                            {name}
+                        </a>
                     </figcaption>
-                    <p className="text-xs font-medium dark:text-white/40">{username}</p>
+                    <p className="text-xs font-medium dark:text-white/40 p-2">{username}</p>
                 </div>
             </div>
             <blockquote className="mt-2 text-sm">{body}</blockquote>

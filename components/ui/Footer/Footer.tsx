@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import Logo from '@/components/icons/LogoIcon';
 import GitHub from '@/components/icons/GithubIcon';
-import Image from 'next/image';
+import UpstashIcon from '@/components/icons/Upstash';
 
 export default function Footer() {
     return (
@@ -90,15 +90,9 @@ export default function Footer() {
                     </span>
                 </div>
                 <div className="flex items-center">
-                    <span className="text-white">Crafted by</span>
-                    <a href="https://vercel.com" aria-label="Vercel.com Link">
-                        <Image
-                            width={80}
-                            height={80}
-                            src="/vercel-logo.svg"
-                            alt="Vercel.com Logo"
-                            className="inline-block h-6 ml-4 text-white"
-                        />
+                    <span className="text-white p-3">Powered by</span>
+                    <a href="https://upstash.com/" aria-label="upstash.com Link">
+                        <UpstashIcon />
                     </a>
                 </div>
             </div>

@@ -23,7 +23,7 @@ export default function Navlinks( ) {
       </div>
       <div className="flex justify-end space-x-8">
           <Link href="/">
-            Sign In
+            Docs
           </Link>
       </div>
     </div>
