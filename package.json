@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3125",
+    "dev": "next dev -p 3126",
     "build": "next build && cp ./node_modules/tiktoken/tiktoken_bg.wasm .next/server/chunks/",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.8",
+    "@radix-ui/react-icons": "^1.3.0",
     "@upstash/rag-chat": "^1.6.4",
     "@upstash/redis": "^1.34.0",
     "ai": "^3.4.7",

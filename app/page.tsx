@@ -5,6 +5,7 @@ import Footer from "@/components/ui/Footer";
 import GridPattern from "@/components/ui/GridBackground/grid-pattern";
 import HeroSection from "@/components/ui/Hero/HeroSection";
 import Navbar from "@/components/ui/Navbar";
+import { TheAnimatedShinyText } from "@/components/ui/Animations/TheInterface";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
     <Navbar />
     <div
       className="relative flex h-svh w-full flex-col items-center justify-center overflow-hidden rounded-none  bg-background md:shadow-xl">
+      <TheAnimatedShinyText />
       <HeroSection />
       <GridPattern
         squares={[
