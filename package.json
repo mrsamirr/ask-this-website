@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3126",
+    "dev": "next dev -p 3125",
     "build": "next build && cp ./node_modules/tiktoken/tiktoken_bg.wasm .next/server/chunks/",
     "start": "next start",
     "lint": "next lint"
