@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Star } from 'lucide-react'
 
-export default function Component() {
+export default function BentoComponent() {
     return (
         <div className='my-10 sm:flex sm:flex-col sm:align-center'>
              <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl mb-10">
@@ -14,7 +14,7 @@ export default function Component() {
                             <span className="bg-green-500 w-2 h-2 rounded-full"></span>
                             <span className="text-xs text-gray-400">Online</span>
                         </div>
-                        <p className="text-sm font-extralight mb-1">varyete.app</p>
+                        <p className="text-sm font-extralight mb-1">auroramind.tech</p>
                         <h2 className="text-xl font-bold mb-1">More than</h2>
                         <h2 className="text-xl font-bold mb-1">10 million users</h2>
                         <p className="text-sm text-gray-400">around the world</p>
@@ -48,8 +48,8 @@ export default function Component() {
                             <p className="text-2xl font-bold mb-2">150+ countries.</p>
                             <p className="text-sm text-gray-400">No matter where you are, chances are our app is there for you.</p>
                         </div>
-                        <div className="w-1/3">
-                            <Image src="/globe.svg" alt="Globe" width={150} height={150} />
+                        <div className="w-1/3 from-sky-500 to-indigo-500">
+                            <Image src="/globe.jpg" alt="Globe" width={150} height={150} className='border bg-black' />
                         </div>
                     </div>
                 </div>
