@@ -2,6 +2,7 @@
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/Reviews/review";
 import { reviews } from "@/data/review";
+import AnimationContainer from "../ui/Animations/animation-container";
 
 
 const firstRow = reviews.slice(0, reviews.length / 2);
@@ -49,20 +50,26 @@ const ReviewCard = ({
 export function Reviews() {
     return (
         <div className="mt-10">
-            <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
-             Our Reviews
-            </h1>
+            <AnimationContainer delay={0.1}>
+                <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+                    Our Reviews
+                </h1>
+            </AnimationContainer>
             <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden bg-background md:shadow-xl">
-                <Marquee pauseOnHover className="[--duration:20s]">
-                    {firstRow.map((review) => (
-                        <ReviewCard key={review.username} {...review} />
-                    ))}
-                </Marquee>
-                <Marquee reverse pauseOnHover className="[--duration:20s]">
-                    {secondRow.map((review) => (
-                        <ReviewCard key={review.username} {...review} />
-                    ))}
-                </Marquee>
+                <AnimationContainer delay={0.1}>
+                    <Marquee pauseOnHover className="[--duration:20s]">
+                        {firstRow.map((review) => (
+                            <ReviewCard key={review.username} {...review} />
+                        ))}
+                    </Marquee>
+                </AnimationContainer>
+                <AnimationContainer delay={0.1}>
+                    <Marquee reverse pauseOnHover className="[--duration:20s]">
+                        {secondRow.map((review) => (
+                            <ReviewCard key={review.username} {...review} />
+                        ))}
+                    </Marquee>
+                </AnimationContainer>
                 <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
                 <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
             </div>
