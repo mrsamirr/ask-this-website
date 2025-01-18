@@ -24,21 +24,14 @@ export const reviews = [
     name: "Shubam Patil",
     username: "@subham",
     body: "I’ve used many AI tools, but Aurora AI stands out for its accuracy and ease of use.",
-    img: "https://pbs.twimg.com/profile_images/1835515674824962048/vsOa5T5i_400x400.jpg",
+    img: "https://i.pravatar.cc/150?u=a04258114e29026708c",
     live: "https://x.com/shubhamsp1602"
   },
   {
     name: "Ayush Bhalotia",
     username: "@ayush",
     body: "Aurora AI helped me streamline my tasks and save so much time. A game changer!",
-    img: "https://media.licdn.com/dms/image/v2/D5603AQHeHKbcrhjTpA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1719843992490?e=1733961600&v=beta&t=MXseuGm__-1lXAFyM7zpGbhS1L0JfOriG2fyMB5OTPc",
+    img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
     live: "https://www.linkedin.com/in/ayushhbhalotia/"
-  },
-  {
-    name: "Syed Sajjad",
-    username: "@syed",
-    body: "With Aurora AI, I’ve been able to automate complex workflows effortlessly. Amazing tool!",
-    img: "https://media.licdn.com/dms/image/v2/D5603AQHZdGJgyHCJyQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1707070162716?e=1733961600&v=beta&t=7RBexvsineK4jkAiMlDB8VesVJSeJ_sBiWLF3PE3Bv0",
-    live: "https://www.linkedin.com/in/01syedsajjadhussain/"
-  },
+  }
 ];
